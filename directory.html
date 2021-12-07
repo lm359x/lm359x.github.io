@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PerComParts:Document</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    
+    <body>
+        <a name="top"></a>
+        <div id="grid-directory-container" class = "grid-container">
+            <nav class="navigation">
+                <div class = "flex-navigation-container">
+                    <div class="flex-nav-item"><form action = "index.html"><button>Главная</button></form></div>
+                    <div class="flex-nav-item"><form action = "news.html"><button>Новости</button></form></div>
+                    <div class="flex-nav-item"><form action = "directory.html"><button>Справочник</button></form></div>
+                    <div class="flex-nav-item"><form action = "catalog.html"><button>Каталог</button></form></div>
+                    <div class="flex-nav-item"><form action = "contacts.html"><button>Контакты</button></form></div>
+                    
+                </div>
+            </nav>
+            <div id="flex-parts-container">
+            <div class = "flex-parts-item" id = "cpuSwitch"><p>Процессор</p></div>
+            <div class = "flex-parts-item" id = "gpuSwitch"><p>Видеокарта</p></div>
+            <div class = "flex-parts-item" id = "mbSwitch"><p>Материнская плата</p></div>
+            <div class = "flex-parts-item" id = "dSwitch"><p>ОЗУ</p></div>
+            <div class = "flex-parts-item"id = "oSwitch"><p>Прочее</p></div>
+            </div>  
+            <div id="directory-content">
+                
+                <p id = "directory-switchable-text">Выберите пункт в меню слева, чтобы увидеть необходимую информацию.</p></div>
+            <script src = "scripts/switch.js"></script>
+            <div id="directory-footer"><p>Комплектующие <mark>всех</mark> упомянутых производителей Вы можете найти в нашем <mark>каталоге</mark>!</p></dix>
+        </div>
+        <aside><a href = "#top">Наверх</a></aside>
+    </body>

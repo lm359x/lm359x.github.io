@@ -1,0 +1,121 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PerComParts:Document</title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body>
+        <div id="grid-catalog-container" class = "grid-container">
+            <nav class="navigation">
+                <div class="flex-navigation-container">
+                    <div class="flex-nav-item">
+                        <form action="index.html"><button>Главная</button></form>
+                    </div>
+                    <div class="flex-nav-item">
+                        <form action="news.html"><button>Новости</button></form>
+                    </div>
+                    <div class="flex-nav-item">
+                        <form action="directory.html"><button>Справочник</button></form>
+                    </div>
+                    <div class="flex-nav-item">
+                        <form action="catalog.html"><button>Каталог</button></form>
+                    </div>
+                    <div class="flex-nav-item">
+                        <form action="contacts.html"><button>Контакты</button></form>
+                    </div>
+
+                </div>
+            </nav>
+            <div class="flex-catalog-good" id="item0">
+                <div class=" good-image"><img src = "images/catalog/item0Image.png"width="100%" height="100%"></div>
+                <div class="good-name">Процессор AMD Ryzen 5 3600 OEM</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Сокет:AM4</li>
+                        <li>Кол-во ядер:6</li>
+                        <li>Частота:3600 МГц</li>
+                        <li>Макс. частота:4200 МГц</li>
+                    </ul>
+                </div>
+                <div ><a onclick = focusGood(0)><p id = "focuser-text-0">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer" id = "closer0"><a onclick = unfocusGood(0)><p>X</p></a></div>
+            </div>
+            <div class="flex-catalog-good" id="item1">
+                <div class=" good-image"><img src = "images/catalog/item1Image.png"width="100%" height="100%"></div>
+                <div class="good-name">Процессор Intel Core i7-11700K</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Сокет:LGA 1200</li>
+                        <li>Кол-во ядер:8</li>
+                        <li>Базовая частота:3600 МГц</li>
+                        <li>Макс. частота:5000 МГц</li>
+                    </ul>
+                </div>
+                <div><a onclick = focusGood(1)><p id = "focuser-text-1">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer flex-catalog-item" id = "closer1"><a onclick = unfocusGood(1)><p>X</p></a></div>
+            </div>
+            <div class="flex-catalog-good" id="item2">
+                <div class="good-image"><img src = "images/catalog/item2Image.png"width="100%" height="100%"></div>
+                <div class="good-name">Видеокарта Gigabyte GeForce RTX 3060 Ti</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Объём видеопамяти:8ГБ</li>
+                        <li>Интерфейс:PCI-Express 4.0</li>
+                        <li>Тип памяти:GDDR6</li>
+                        <li>Разрядность шины:192 бит</li>
+                    </ul>
+                </div>
+                <div ><a onclick = focusGood(2)><p id = "focuser-text-2">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer" id = "closer2"><a onclick = unfocusGood(2)><p>X</p></a></div>
+            </div>
+            <div class="flex-catalog-good" id="item3">
+                <div class="good-image"><img src = "images/catalog/item3Image.png"width="100%" height="100%"></div>
+                <div class="good-name">Материнская плата ASRock B550M-HDV</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Сокет:AM4</li>
+                        <li>Поддерживаемая память:DDR4</li>
+                        <li>Форм-фактор:Micro-ATX</li>
+                        <li>Слоты расширения:PCI-Express 4.0</li>
+                    </ul>
+                </div>
+                <div ><a onclick = focusGood(3)><p id = "focuser-text-3">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer" id = "closer3"><a onclick = unfocusGood(3)><p>X</p></a></div>
+            </div>
+            <div class="flex-catalog-good" id="item4">
+                <div class="good-image"><img src = "images/catalog/item4Image.PNG"width="100%" height="100%"></div>
+                <div class="good-name">Материнская плата ASRock H510M-HVS R2.0</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Сокет:LGA 1200</li>
+                        <li>Поддерживаемая память:DDR4</li>
+                        <li>Форм-фактор:Micro-ATX</li>
+                        <li>Слоты расширения:PCI-Express 4.0</li>
+                    </ul>
+                </div>
+                <div ><a onclick = focusGood(4)><p id = "focuser-text-4">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer" id = "closer4"><a onclick = unfocusGood(4)><p>X</p></a></div>
+            </div>
+            <div class="flex-catalog-good" id="item5">
+                <div class="good-image"> <img src = "images/catalog/item5Image.png"width="100%" height="100%"></div>
+                <div class="good-name">Видеокарта PowerColor AMD Radeon RX 6700</div>
+                <div class="good-description">
+                    <ul>
+                        <li>Объём видеопамяти:12ГБ</li>
+                        <li>Интерфейс:PCI-Express 4.0</li>
+                        <li>Тип памяти:GDDR6</li>
+                        <li>Разрядность шины:256 бит</li>
+                    </ul>
+                </div>
+                <div ><a onclick = focusGood(5)><p id = "focuser-text-5">Узнать подробнее</p></a></div>
+                <div class = "hidden-closer" id = "closer5"><a onclick = unfocusGood(5)><p>X</p></a></div>
+            </div>
+            <script  src = "scripts/focusGood.js"></script>
+            <script src = "scripts//unfocusGood.js"></script>
+        </div>
+        
+    </body>

@@ -1,0 +1,439 @@
+/*Оформление межстраничных селекторов*/
+body{
+    background-color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background: #000000;
+    background: -moz-linear-gradient(90deg, #7109AA	 0%, #1240AB	 100%);
+    background: -webkit-linear-gradient(90deg, #7109AA 0%, #1240AB	 100%);
+    background: -o-linear-gradient(90deg, #7109AA 0%, #1240AB	 100%);
+    background: -ms-linear-gradient(90deg, #7109AA 0%, #1240AB	 100%);
+    background: linear-gradient(90deg, #7109AA 0%, #1240AB	 100%);
+}
+p{
+    color:#ffffff;
+    
+}
+mark{
+    background-color: inherit;
+    font-weight:800;
+    color:#ffffff;
+}
+.grid-container{
+    display:grid;
+    height:100%;
+    grid-column-gap: 2%;
+    grid-row-gap:1%;
+    width:92%;
+    position: relative;
+    left:4%;
+}
+.flex-navigation-container{
+    display:flex;
+    width:100%;
+    height:100%;
+    margin-bottom: 5%;
+}
+.flex-nav-item{
+    width: 20%;
+    margin:0;
+    height:100%;
+    
+}
+.flex-nav-item button{
+    height:100%;
+    width:100%;
+    background-color:#3914AF ;
+    cursor: pointer;
+    color:#ffffff;
+    border-radius: 5px;
+    border-right:2px solid #6A48D7;
+    border-left:2px solid #6A48D7;
+    border-top:transparent;
+    border-bottom:transparent;
+    font-size:200%;
+}
+.flex-nav-item button:hover{
+    background-color:#412C84 ;
+}
+article{
+    overflow: hidden;
+}
+aside{
+    position:fixed;
+    top:50%;
+    right:0;
+    text-decoration: underline;
+    background-color:#06266F ;
+    color:#6C8CD5;
+    border:#ffffff solid 2px;
+    
+
+}
+/*Оформление главной страницы*/
+#main-container{
+    margin:15%;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items: center;
+    justify-content: center;
+    height:100%;
+    margin:0;
+    width:92%;
+    position: relative;
+    left:4%;
+}
+#main-container>div{
+    width:100%;
+    text-align: left;
+    margin-top: 48px;
+}
+#sub-info p, #start-info p{
+    margin:0;
+    color:#ffffff96;
+}
+#start-info{
+    height: 160px;
+    font-size: 48.83px;
+}
+#sub-info{
+    font-size:25.00px;
+    height:128px;
+}
+#main-button-container{
+    display:flex;
+    height:72px;
+}
+#main-button-container div{
+    margin: 0 2%;
+    flex-basis: 20%;
+    text-align: center;
+}
+.main-button{
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    border:1px;
+    box-shadow: 0 0 80px 80px 	#200772 inset;
+    background: #1240AB ;
+    cursor: pointer;
+}
+.main-button p{
+    color:#412C84;
+    font-size:150%;
+}
+.main-button:hover p{
+    color: #06266F;
+}
+.main-button:hover{
+    box-shadow: 0 0 10px 10px 	#200772 inset;
+    transition: box-shadow 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275), color 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*Оформление страницы "Новости"*/
+#grid-news-container{
+    grid-template-columns: 5fr 3fr;
+    grid-template-rows: 1fr 5fr 2fr;
+    grid-template-areas:
+    "nav nav"
+    "first second"
+    "third fourth";
+
+}
+.grid-news-item{
+    border:2px solid #9F3ED5 ;
+    background-color:#000000;
+    overflow: hidden;
+}
+.grid-news-item img{
+    float:left;
+    max-width: 30%;
+}
+.grid-news-item article section{
+    overflow:hidden;
+    font-size: 20px;
+}
+.grid-news-item article{
+    position:relative;
+    display:grid;
+    height:100%;
+    grid-template-rows: 1fr 6fr 1fr ;
+}
+.grid-news-item header{
+    color:#7109AA;
+    text-align: center;
+    position:relative;
+    margin-bottom: 5px;
+    font-size: 25.00px;
+}
+
+.grid-news-item p{
+    color:#6C8CD5;
+    margin:0;
+    position:relative;
+    top:0;
+    
+}
+.grid-news-item footer{
+    display: block;
+    text-align: center;
+    position: relative;
+    margin-bottom:0;
+}
+#article1{
+    grid-area: first;
+}
+#article2{
+    grid-area: second;
+}
+#article3{
+    grid-area: third;
+}
+#article4{
+    grid-area: fourth;
+}
+#grid-news-container .navigation{
+    grid-area:nav;
+    
+
+}
+/*Оформление страницы "Справочник"*/
+#grid-directory-container{
+    grid-template-columns:2fr 6fr ;
+    grid-template-rows:1fr 6fr 1fr; 
+    grid-template-areas: 
+    "nav nav"
+    "list info"
+    "list footer";
+    
+}
+#grid-directory-container>div{
+    border:2px solid #9F3ED5;
+}
+#grid-directory-container nav{
+    grid-area:nav;
+}
+#flex-parts-container{
+    grid-area:list;
+
+}
+
+#directory-content{
+    grid-area: info;
+    background-color:#7109AA ;
+    color: #ffffff;
+    font-size:25.00px;
+    padding:8px;
+}
+#directory-switchable-text{
+    padding: 16px;
+}
+#flex-parts-container{
+    display:flex;
+    flex-flow:column nowrap;
+}
+.flex-parts-item{
+    margin:0;
+    border:5px solid #AD66D5;
+    height:20%;
+    background-color: #200772;
+}
+.flex-parts-item p{
+    width:80%;
+    font-size: 39.06px;
+}
+.flex-parts-item:hover{
+    background-color: #6A48D7;
+}
+
+#directory-footer{
+    text-align: center;
+    display: block;
+    background-color: #AD66D5;
+    grid-area:footer;
+}
+
+/*Оформление страницы "Каталог"*/
+#grid-catalog-container{
+   
+    grid-template-areas:
+    "nav nav nav "
+    "item0 item1 item2  "
+    "item3 item4 item5 " ;
+    grid-template-rows: 1fr 5.5fr 5.5fr;
+    grid-template-columns: repeat(3,2fr);
+    grid-column-gap:5%;
+    height:150%;
+   
+    
+}
+#grid-catalog-container nav{
+    grid-area: nav;
+    height:100%;
+}
+.flex-catalog-good{
+    display:flex;
+    flex-flow:column nowrap;
+    height: 100%;
+    width:calc(100%-4px);
+    border: 2px solid ;
+    border-radius: 5px;
+    opacity:0.95;
+    color:#ffffff;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+    
+}
+
+.good-image{
+    height:40%;
+}
+.good-name{
+    height:10%;
+}
+.good-details{
+    height:30%;
+}
+#item0, #item3,#item5{
+border-color: #48036F;
+}
+#item1, #item2,#item4{
+    border-color: #06266F	;
+    }
+#item0{
+    grid-area: item0;
+}
+#item1{
+    grid-area: item1;
+}
+#item2{
+    grid-area: item2;
+}
+#item3{
+    grid-area: item3;
+}
+#item4{
+    grid-area: item4;
+}
+#item5{
+    grid-area: item5;
+}
+
+.hidden-good{
+    opacity: 0;
+    transition:  opacity 1s ease-in-out;
+}
+.hidden-good .focuser{
+    display:none;
+}
+.focused-good{
+    opacity:1;
+    position:fixed;
+    top:25%;
+    left:25%;
+    height: 50%;
+    width:50%;
+    transition: opacity 1s ease-in-out;
+}
+.hidden-closer{
+    display:none;
+}
+.focused-closer{
+    display:block;
+}
+.focused-closer p{
+    background-color:red;
+    border-radius: 25px;
+    border: 2px solid black;
+}
+#grid-contacts-container{
+    grid-template-rows: 1fr 7fr;
+    
+}
+/*Оформление контактов*/
+#contacts-info{
+    max-width: 80%;
+    color:#ffffff;
+    
+}
+
+#contacts-info p {
+    color:#ffffff96;
+    font-size:48.83px;
+}
+#contacts-info div{
+    position:relative;
+    top:25%;
+}
+#pop-up-contacts{
+    text-decoration: underline;
+}
+#pop-up-form{
+    text-align: center;
+}
+
+@media (max-width:1080px) {
+    #main-container{
+        justify-content: flex-start;
+    }
+    #main-container>div{
+        margin-top:8px;
+    }
+    #start-info, #sub-info{
+        font-size: 16.00px;
+        height:auto;
+    }
+    #main-button-container{
+        flex-flow:column;
+    }
+    .flex-navigation-container{
+        flex-flow: column;
+    }
+    .flex-nav-item{
+        width:100%;
+    }
+    #grid-directory-container{
+        grid-template-areas: 
+        "nav" "list" "info" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+    .grid-news-item header{
+        font-size: 16.00px;
+    }
+    #grid-news-container{
+        display:flex;
+        flex-flow:column;
+    }
+    #grid-catalog-container{
+        display:flex;
+        flex-flow: row wrap;
+    }
+    #grid-catalog-container nav{
+        position:absolute;
+        top:0;
+        min-width:100%;
+        height: 20%;
+    }
+    .flex-catalog-good{
+        max-width:45%;
+        position:relative;
+        top:25%;
+        height:40%;
+        font-size:12.00px;
+    }
+    .flex-catalog-good ul{
+        list-style-type: none;
+        padding-left:0;
+        
+    }
+    .flex-catalog-good li{
+        list-style-type: none;
+        
+        
+    }
+    #contacts-info p{
+        font-size: 31.25px;
+    }
+    
+}
